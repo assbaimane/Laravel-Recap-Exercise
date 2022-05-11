@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+require __DIR__.'/auth.php';
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,4 +24,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+// ----------------- BANNER -----------------
+Route::get('/back/banner', [BannerController::class, 'index'])->name('banner.index');
+Route::get('/back/banner/{id}/edit', [BannerController::class, 'edit'])->name('banner.edit');
+Route::post('/back/banner/{id}/update', [BannerController::class, 'update'])->name('banner.update');
