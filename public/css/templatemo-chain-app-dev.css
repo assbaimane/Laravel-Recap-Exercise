@@ -1048,37 +1048,37 @@ Services Style
   color: #fff;
 }
 
-.first-service .icon {
+/* .first-service .icon {
   background-image: url(../images/service-icon-01.png);
-}
+} */
 
 .first-service:hover .icon {
-  background-image: url(../images/service-icon-hover-01.png);
+  filter: brightness(0) invert(1);
 }
 
-.second-service .icon {
+/* .second-service .icon {
   background-image: url(../images/service-icon-02.png);
-}
+} */
 
 .second-service:hover .icon {
-  background-image: url(../images/service-icon-hover-02.png);
+  filter: brightness(0) invert(1);
 }
 
 
-.third-service .icon {
+/* .third-service .icon {
   background-image: url(../images/service-icon-03.png);
-}
+} */
 
 .third-service:hover .icon {
-  background-image: url(../images/service-icon-hover-03.png);
+  filter: brightness(0) invert(1);
 }
 
-.fourth-service .icon {
+/* .fourth-service .icon {
   background-image: url(../images/service-icon-04.png);
-}
+} */
 
 .fourth-service:hover .icon {
-  background-image: url(../images/service-icon-hover-04.png);
+  filter: brightness(0) invert(1);
 }
 
 .service-item:hover {
