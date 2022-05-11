@@ -11,11 +11,18 @@
 
     <ul class="nav-list">
       <li>
+        <a href={{ route('role.index') }}>
+          <span class="links_name">Roles</span>
+        </a>
+         <span class="tooltip">Roles</span>
+      </li>
+      
+      <li>
         <a href={{ route('banner.index') }}>
           {{-- <i class='fa-solid fa-medal'></i> --}}
-          <span class="links_name">Banner</span>
+          <span class="links_name">Banners</span>
         </a>
-         <span class="tooltip">Banner</span>
+         <span class="tooltip">Banners</span>
       </li>
 
 
