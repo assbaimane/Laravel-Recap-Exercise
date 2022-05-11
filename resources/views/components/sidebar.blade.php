@@ -25,6 +25,13 @@
          <span class="tooltip">Banners</span>
       </li>
 
+      <li>
+        <a href={{ route('services.index') }}>
+          {{-- <i class='fa-solid fa-medal'></i> --}}
+          <span class="links_name">Services</span>
+        </a>
+         <span class="tooltip">Services</span>
+      </li>
 
      <li class="profile">
          <div class="profile-details">
