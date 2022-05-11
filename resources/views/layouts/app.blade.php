@@ -12,13 +12,20 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href={{ asset('css/tailwind.css') }}>
-
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
+
     <body class="font-sans antialiased">
+
+        @extends('components.sidebar')
+        @section('content')
+        @include('layouts.navigation')
+
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+            
 
             <!-- Page Heading -->
             <header class="bg-white shadow">
@@ -32,5 +39,6 @@
                 {{ $slot }}
             </main>
         </div>
+        @endsection
     </body>
 </html>
