@@ -33,6 +33,14 @@
          <span class="tooltip">Services</span>
       </li>
 
+      <li>
+        <a href={{ route('testimonials.index') }}>
+          {{-- <i class='fa-solid fa-medal'></i> --}}
+          <span class="links_name">Testimonials</span>
+        </a>
+         <span class="tooltip">Testimonials</span>
+      </li>
+
      <li class="profile">
          <div class="profile-details">
           <div class="name_job">

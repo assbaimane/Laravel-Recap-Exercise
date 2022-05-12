@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\BannerController;
@@ -42,3 +43,6 @@ Route::post('/back/banner/{id}/update', [BannerController::class, 'update'])->na
 // ------- FULLCRUD - ROUTE RESSOURCES ------
 // ---------------- SERVICE -----------------
 Route::resource('back/services', ServiceController::class);
+
+// -------------- TESTIMONIAL ---------------
+Route::resource('back/testimonials', TestimonialController::class);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Banner;
 use App\Models\Role;
 use App\Models\Service;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,6 +14,7 @@ class HomeController extends Controller
     {   $roles = Role::all();
         $banners = Banner::all();
         $services = Service::all();
-        return view("welcome", compact("roles","banners","services"));
+        $testimonials = Testimonial::all();
+        return view("welcome", compact("roles","banners","services","testimonials"));
     }
 }
