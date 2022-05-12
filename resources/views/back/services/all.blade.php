@@ -48,7 +48,7 @@
                             <div class='d-flex'>
                                 <form action='{{ route('services.destroy', $service->id) }}' method='post'>
                                     @csrf
-                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                    <button class="btn btn-danger" name="_method" value="DELETE" type="submit">Delete</button>
                                 </form>
                                 <a class='btn btn-secondary' href='{{ route('services.edit', $service->id) }}' role='button'>Edit</a>
                                 <a class='btn btn-secondary' href='{{ route('services.show', $service->id) }}' role='button'>Read</a>
